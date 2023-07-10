@@ -10,6 +10,7 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
 .title {
   @extend %title;
 }
+
 %table {
   background-color: #d9d9d9;
   border-radius: 40px;
@@ -27,14 +28,16 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
 
 }
 
-.visible-block{
+.visible-block {
   @media #{$desktop} {
     display: none;
   }
+
   @media #{$largedesktop} {
     display: none;
   }
 }
+
 .table {
   @extend %table;
 }
@@ -42,6 +45,7 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
 .table-title {
   font-weight: bold;
   border-bottom: $table-line;
+
   @media #{$mobile} {
     padding-left: 2px;
   }
@@ -85,6 +89,7 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
   @media #{$mobile} {
     width: 10px;
   }
+
   @media #{$tablet} {
     width: 25px;
   }
@@ -107,6 +112,11 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
     display: flex;
     justify-content: start;
     padding: 0 1% 0 1%;
+    margin-bottom: 116px;
+
+    @media #{$mobile} {
+      margin-bottom: 57px;
+    }
   }
 
   &__wrapper {
@@ -135,7 +145,7 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
   }
 
   &__table-title {
-    @extend %elements-text;
+    font-family: Montserrat, sans-serif;
     font-weight: bold;
     padding-top: 1.4vh;
   }
@@ -143,7 +153,7 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
   &__table-item {
     color: #1E0C06;
     font-size: 1.2em;
-    @extend %elements-text;
+    font-family: Montserrat, sans-serif;
     display: flex;
     justify-content: center;
     white-space: nowrap;
@@ -195,10 +205,12 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1%;
     grid-template-rows: repeat(5, 1fr) 1vh;
+
     @media #{$mobile} {
       grid-template-columns: 1fr auto auto 1%;
       grid-template-rows: repeat(5, 1fr) 1vh;
     }
+
     @media #{$tablet} {
       grid-template-columns: auto auto auto 1%;
       grid-template-rows: repeat(5, 1fr) 1vh;
@@ -215,6 +227,7 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
     @media #{$mobile} {
       grid-template-columns: auto 1fr 1fr 1fr 1%;
     }
+
     @media #{$tablet} {
       grid-template-columns: auto 1fr 1fr 1fr 1%;
     }

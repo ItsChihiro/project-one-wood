@@ -98,13 +98,6 @@ body {
   }
 }
 
-.block-pricelist__table-item, .block-pricelist__table-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #F5F5F5;
-  font-style: normal;
-}
-
 img {
   max-width: 100%;
 }
@@ -208,6 +201,12 @@ img {
   display: flex;
   justify-content: start;
   padding: 0 1% 0 1%;
+  margin-bottom: 116px;
+}
+@media screen and (max-width: 599px) {
+  .block-pricelist__title {
+    margin-bottom: 57px;
+  }
 }
 .block-pricelist__wrapper {
   display: flex;
@@ -232,12 +231,14 @@ img {
   }
 }
 .block-pricelist__table-title {
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   padding-top: 1.4vh;
 }
 .block-pricelist__table-item {
   color: #1E0C06;
   font-size: 1.2em;
+  font-family: Montserrat, sans-serif;
   display: flex;
   justify-content: center;
   white-space: nowrap;

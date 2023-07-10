@@ -4,14 +4,6 @@
 
 .title {
     @extend %title;
-
-    @media #{$tablet} {
-        font-size: 60px;
-    }
-
-    @media #{$mobile} {
-        font-size: 30px;
-    }
 }
 
 .text {
