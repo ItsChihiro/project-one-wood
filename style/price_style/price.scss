@@ -84,15 +84,7 @@ $table-line: 1px solid rgba(142, 57, 33, 0.37);
 }
 
 .arrow {
-  width: 40px;
-
-  @media #{$mobile} {
-    width: 10px;
-  }
-
-  @media #{$tablet} {
-    width: 25px;
-  }
+  @extend %arrow;
 }
 
 #wrapper-arrow {

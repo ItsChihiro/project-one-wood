@@ -49,3 +49,7 @@
     justify-content: center;
   }
 }
+
+.arrow {
+  @extend %arrow;
+}

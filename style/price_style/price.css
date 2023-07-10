@@ -98,6 +98,20 @@ body {
   }
 }
 
+.arrow {
+  width: 40px;
+}
+@media screen and (max-width: 599px) {
+  .arrow {
+    width: 10px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .arrow {
+    width: 25px;
+  }
+}
+
 .table {
   background-color: #d9d9d9;
   border-radius: 40px;
@@ -164,20 +178,6 @@ body {
 
 .table2-last-row {
   grid-column: 1/4;
-}
-
-.arrow {
-  width: 40px;
-}
-@media screen and (max-width: 599px) {
-  .arrow {
-    width: 10px;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-  .arrow {
-    width: 25px;
-  }
 }
 
 #wrapper-arrow {

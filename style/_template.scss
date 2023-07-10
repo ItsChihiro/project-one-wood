@@ -99,6 +99,15 @@ body {
     cursor: pointer;
 }
 
-// img {
-//     max-width: 100%;
-// }
+
+%arrow {
+    width: 40px;
+
+    @media #{$mobile} {
+        width: 10px;
+    }
+
+    @media #{$tablet} {
+        width: 25px;
+    }
+}

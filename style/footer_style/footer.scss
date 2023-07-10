@@ -95,6 +95,11 @@
             gap: 10px;
         }
 
+        @media screen and (max-width: 740px) {
+            flex-direction: column;
+            gap: 17px;
+        }
+
         @media #{$mobile} {
             flex-direction: column;
             gap: 17px;

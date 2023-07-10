@@ -192,6 +192,12 @@ body {
     gap: 10px;
   }
 }
+@media screen and (max-width: 740px) {
+  .footer__group {
+    flex-direction: column;
+    gap: 17px;
+  }
+}
 @media screen and (max-width: 599px) {
   .footer__group {
     flex-direction: column;

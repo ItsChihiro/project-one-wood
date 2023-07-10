@@ -105,6 +105,20 @@ body {
   line-height: 139.4%;
 }
 
+.arrow {
+  width: 40px;
+}
+@media screen and (max-width: 599px) {
+  .arrow {
+    width: 10px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .arrow {
+    width: 25px;
+  }
+}
+
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .title {
     font-size: 60px;

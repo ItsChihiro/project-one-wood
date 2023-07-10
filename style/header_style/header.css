@@ -119,9 +119,6 @@ body {
     width: 84px;
   }
 }
-.header__logo-img {
-  max-width: 100%;
-}
 .header__nav {
   width: 50%;
 }
@@ -157,4 +154,8 @@ body {
 }
 .header .active {
   color: #A3B8D7;
+}
+
+.logo-img {
+  max-width: 100%;
 }/*# sourceMappingURL=header.css.map */
