@@ -17,192 +17,190 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 </head>
 
-<body>
-  <div class="background-gallery-page">
-    <header class="header">
-      <div class="header__container container-main">
-        <div class="header__wrapper">
-          <div class="header__logo">
-            <a href="./home.html">
-              <img src="./assets/img/template/logo.svg" alt="logo icon" class="logo-img">
-            </a>
-          </div>
+<body class="background-gallery-page">
+  <header class="header">
+    <div class="header__container container-main">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="./home.html">
+            <img src="./assets/img/template/logo.svg" alt="logo icon" class="logo-img">
+          </a>
+        </div>
 
-          <nav class="header__nav">
-            <ul class="header__items">
-              <li class="header__item"><a class="header__nav-link active" href='./gallery.html'>Gallery</a></li>
-              <li class="header__item"><a class="header__nav-link" id="red" href='./price.html'>Prices for
-                  services</a></li>
-              <li class="header__item"><a class="header__nav-link" href='./aboutUs.html'>About us</a>
-              </li>
-              <li class="header__item"><a class="header__nav-link" href='./contact.html'>Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__burger">
-            <img src="./assets/img/template/burger.svg" alt="burger" class="header__burger-img">
+        <nav class="header__nav">
+          <ul class="header__items">
+            <li class="header__item"><a class="header__nav-link active" href='./gallery.html'>Gallery</a></li>
+            <li class="header__item"><a class="header__nav-link" id="red" href='./price.html'>Prices for
+                services</a></li>
+            <li class="header__item"><a class="header__nav-link" href='./aboutUs.html'>About us</a>
+            </li>
+            <li class="header__item"><a class="header__nav-link" href='./contact.html'>Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__burger">
+          <img src="./assets/img/template/burger.svg" alt="burger" class="header__burger-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="block-ourworks">
+      <h2 class="block-ourworks__title title">OUR WORKS</h2>
+      <div id="carouselControlsWoods" class="carousel" data-ride="">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/template/ourwork.jpg" class="d-block w-100 block-ourworks__pic1" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/template/ourwork2.jpg" class="d-block w-100 block-ourworks__pic1" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/template/ourwork3.jpg" class="d-block w-100 block-ourworks__pic1" alt="..." />
+          </div>
+        </div>
+        <a class="carousel-control-prev arrow" href="#carouselControlsWoods" role="button" data-slide="prev">
+          <img class="arrow" src="./assets/img/template/arrow-left.png" aria-hidden="true" />
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControlsWoods" role="button" data-slide="next">
+          <img class="arrow" src="./assets/img/template/arrow-right.png" aria-hidden="true" />
+        </a>
+      </div>
+    </section>
+
+    <section class="thewood">
+      <div class="thewood__title">
+        <h2 class="thewood__title-text title">
+          THE WOOD WE<br />
+          WORK WITH
+        </h2>
+      </div>
+      <div class="thewood-wrapper">
+        <div class="thewood-wrapper__card">
+          <img src="./assets/img/home_img/old-wood-grain-background 2.png" alt="oak-wood"
+            class="thewood-wrapper__card-img" />
+          <div class="thewood-card">
+            <h5 class="thewood-card__title">OAK</h5>
+            <div class="thewood-card__list">
+              <div class="thewood-card__item">
+                <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="check-mark"
+                  class="thewood-card__item-img" />
+                <span class="thewood-card__item-text">Durability</span>
+              </div>
+              <div class="thewood-card__item">
+                <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="check-mark"
+                  class="thewood-card__item-img" />
+                <span class="thewood-card__item-text">Beautiful <br> texture</span>
+              </div>
+              <div class="thewood-card__item">
+                <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="thewood-check-mark"
+                  class="thewood-card__item-img" />
+                <span class="thewood-card__item-text">Water resistance</span>
+              </div>
+              <div class="thewood-card__item">
+                <img src="./assets/img/home_img/maki_cross.svg" alt="check-mark" class="thewood-card__item-img" />
+                <span class="thewood-card__item-text">Expensive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="thewood-wrapper__card">
+          <img src="./assets/img/home_img/wood-texture-design-decoration 1.png" alt="oak-wood"
+            class="thewood-wrapper__card-img" />
+          <div class="thewood-card">
+            <h5 class="thewood-card__title">BUK</h5>
+            <div class="thewood-card__list">
+              <div class="thewood-card__item">
+                <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="check-mark"
+                  class="thewood-card__item-img" />
+                <span class="thewood-card__item-text">Durability</span>
+              </div>
+              <div class="thewood-card__item">
+                <img src="./assets/img/home_img/maki_cross.svg" alt="cross" class="thewood-card__item-img" />
+                <span class="thewood-card__item-text">Hard to handle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="thewood-wrapper__card">
+          <img src="./assets/img/home_img/pale-oak-wood-texture-design-background 1.png" alt="oak-wood"
+            class="thewood-wrapper__card-img" />
+          <div class="thewood-card">
+            <h5 class="thewood-card__title">ASH</h5>
+            <div class="thewood-card__list">
+              <div class="thewood-card__item">
+                <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="check-mark"
+                  class="thewood-card__item-img" />
+                <span class="thewood-card__item-text">Durability</span>
+              </div>
+              <div class="thewood-card__item">
+                <img src="./assets/img/home_img/maki_cross.svg" alt="cross" class="thewood-card__item-img" />
+                <span class="thewood-card__item-text">Hard to handle</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main class="main">
-      <section class="block-ourworks">
-        <h2 class="block-ourworks__title title">OUR WORKS</h2>
-        <div id="carouselControlsWoods" class="carousel" data-ride="">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/img/template/ourwork.jpg" class="d-block w-100 block-ourworks__pic1" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/img/template/ourwork2.jpg" class="d-block w-100 block-ourworks__pic1" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/img/template/ourwork3.jpg" class="d-block w-100 block-ourworks__pic1" alt="..." />
-            </div>
-          </div>
-          <a class="carousel-control-prev arrow" href="#carouselControlsWoods" role="button" data-slide="prev">
-            <img class="arrow" src="./assets/img/template/arrow-left.png" aria-hidden="true" />
-            <span class="sr-only"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselControlsWoods" role="button" data-slide="next">
-            <img class="arrow" src="./assets/img/template/arrow-right.png" aria-hidden="true" />
-          </a>
+    <section class="block-anyquestions">
+      <h2 class="block-anyquestions__title title">ANY QUESTIONS?</h2>
+      <div class="block-anyquestions__main-part">
+        <div class="block-anyquestions__input-info form">
+          <input type="text" name="YourName" id="YourName" placeholder="Your name" accesskey="n" tabindex="1"
+            class="form__input-yourname form" />
+          <input type="text" name="yourtelnum" id="YourTelNum" placeholder="Your telephone number" accesskey="t"
+            tabindex="2" class="form__input-yourtelnum form" />
+          <textarea type="text" name="yourquestion" id="yourquestion" placeholder="Your question" accesskey="q"
+            tabindex="3" rows="5" class="form__input-yourquestions form"></textarea>
+          <button type="button" class="form__button button">Send</button>
         </div>
-      </section>
-
-      <section class="thewood">
-        <div class="thewood__title">
-          <h2 class="thewood__title-text title">
-            THE WOOD WE<br />
-            WORK WITH
-          </h2>
-        </div>
-        <div class="thewood-wrapper">
-          <div class="thewood-wrapper__card">
-            <img src="./assets/img/home_img/old-wood-grain-background 2.png" alt="oak-wood"
-              class="thewood-wrapper__card-img" />
-            <div class="thewood-card">
-              <h5 class="thewood-card__title">OAK</h5>
-              <div class="thewood-card__list">
-                <div class="thewood-card__item">
-                  <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="check-mark"
-                    class="thewood-card__item-img" />
-                  <span class="thewood-card__item-text">Durability</span>
-                </div>
-                <div class="thewood-card__item">
-                  <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="check-mark"
-                    class="thewood-card__item-img" />
-                  <span class="thewood-card__item-text">Beautiful <br> texture</span>
-                </div>
-                <div class="thewood-card__item">
-                  <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="thewood-check-mark"
-                    class="thewood-card__item-img" />
-                  <span class="thewood-card__item-text">Water resistance</span>
-                </div>
-                <div class="thewood-card__item">
-                  <img src="./assets/img/home_img/maki_cross.svg" alt="check-mark" class="thewood-card__item-img" />
-                  <span class="thewood-card__item-text">Expensive</span>
-                </div>
-              </div>
-            </div>
+        <div class="block-anyquestions__right-column">
+          <div class="block-anyquestions__text-wrapper">
+            <p class="block-anyquestions__text">
+              Write to us and we will be sure to answer all your questions
+              and give you a comprehensive consultation.
+            </p>
           </div>
-          <div class="thewood-wrapper__card">
-            <img src="./assets/img/home_img/wood-texture-design-decoration 1.png" alt="oak-wood"
-              class="thewood-wrapper__card-img" />
-            <div class="thewood-card">
-              <h5 class="thewood-card__title">BUK</h5>
-              <div class="thewood-card__list">
-                <div class="thewood-card__item">
-                  <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="check-mark"
-                    class="thewood-card__item-img" />
-                  <span class="thewood-card__item-text">Durability</span>
-                </div>
-                <div class="thewood-card__item">
-                  <img src="./assets/img/home_img/maki_cross.svg" alt="cross" class="thewood-card__item-img" />
-                  <span class="thewood-card__item-text">Hard to handle</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="thewood-wrapper__card">
-            <img src="./assets/img/home_img/pale-oak-wood-texture-design-background 1.png" alt="oak-wood"
-              class="thewood-wrapper__card-img" />
-            <div class="thewood-card">
-              <h5 class="thewood-card__title">ASH</h5>
-              <div class="thewood-card__list">
-                <div class="thewood-card__item">
-                  <img src="./assets/img/home_img/twemoji_check-mark.svg" alt="check-mark"
-                    class="thewood-card__item-img" />
-                  <span class="thewood-card__item-text">Durability</span>
-                </div>
-                <div class="thewood-card__item">
-                  <img src="./assets/img/home_img/maki_cross.svg" alt="cross" class="thewood-card__item-img" />
-                  <span class="thewood-card__item-text">Hard to handle</span>
-                </div>
-              </div>
-            </div>
+          <div class="block-anyquestions__wrapper-wood">
+            <img class="block-anyquestions__wood-img" src="./assets/img/template/wood_img.png" alt="wood imege" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="block-anyquestions">
-        <h2 class="block-anyquestions__title title">ANY QUESTIONS?</h2>
-        <div class="block-anyquestions__main-part">
-          <div class="block-anyquestions__input-info form">
-            <input type="text" name="YourName" id="YourName" placeholder="Your name" accesskey="n" tabindex="1"
-              class="form__input-yourname form" />
-            <input type="text" name="yourtelnum" id="YourTelNum" placeholder="Your telephone number" accesskey="t"
-              tabindex="2" class="form__input-yourtelnum form" />
-            <textarea type="text" name="yourquestion" id="yourquestion" placeholder="Your question" accesskey="q"
-              tabindex="3" rows="5" class="form__input-yourquestions form"></textarea>
-            <button type="button" class="form__button button">Send</button>
+  <footer class="footer">
+    <div class="footer__container container-main">
+      <div class="footer__wrapper">
+        <div class="footer__basic">
+          <div class="footer__logo">
+            <img class="footer__logo-icon" src="./assets/img/template/logo.svg">
           </div>
-          <div class="block-anyquestions__right-column">
-            <div class="block-anyquestions__text-wrapper">
-              <p class="block-anyquestions__text">
-                Write to us and we will be sure to answer all your questions
-                and give you a comprehensive consultation.
+
+          <div class="footer__group">
+            <div class="footer__tel item">
+              <img src="./assets/img/template/ph_phone-call (1).svg" alt="telephone icon" class="footer__tel-icon">
+              <p class="footer__tel-text">
+                <a href="tel:+420 000 000 000" class="elements-text">+420 000 000 000</a>
               </p>
             </div>
-            <div class="block-anyquestions__wrapper-wood">
-              <img class="block-anyquestions__wood-img" src="./assets/img/template/wood_img.png" alt="wood imege" />
+
+            <div class="footer__address item">
+              <img src="./assets/img/template/bi_geo-alt.svg" alt="address icon" class="footer__address-icon">
+              <p class="footer__address-text elements-text">Na Plzeňce 1166/0 150 00</p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="footer">
-      <div class="footer__container container-main">
-        <div class="footer__wrapper">
-          <div class="footer__basic">
-            <div class="footer__logo">
-              <img class="footer__logo-icon" src="./assets/img/template/logo.svg">
-            </div>
-
-            <div class="footer__group">
-              <div class="footer__tel item">
-                <img src="./assets/img/template/ph_phone-call (1).svg" alt="telephone icon" class="footer__tel-icon">
-                <p class="footer__tel-text">
-                  <a href="tel:+420 000 000 000" class="elements-text">+420 000 000 000</a>
-                </p>
-              </div>
-
-              <div class="footer__address item">
-                <img src="./assets/img/template/bi_geo-alt.svg" alt="address icon" class="footer__address-icon">
-                <p class="footer__address-text elements-text">Na Plzeňce 1166/0 150 00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="footer__privacy">
-            <p class="footer__privacy-text">Privacy Policy</p>
-          </div>
+        <div class="footer__privacy">
+          <p class="footer__privacy-text">Privacy Policy</p>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

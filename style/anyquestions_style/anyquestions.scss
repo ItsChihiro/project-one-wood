@@ -6,8 +6,7 @@ $marginform: 0px 2% 10px 20px;
 $text-color: #F5F5F5;
 
 .see {
-  @media #{$largedesktop}
-  {
+  @media #{$largedesktop} {
     display: none;
   }
 
@@ -118,6 +117,7 @@ $text-color: #F5F5F5;
 
   &__wood-img {
     z-index: -1;
+
     @media #{$mobile} {
       display: none;
     }
