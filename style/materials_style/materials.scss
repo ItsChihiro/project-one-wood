@@ -1,0 +1,115 @@
+@import "../fonts";
+@import "../template";
+
+
+.title {
+    @extend %title;
+
+    @media #{$tablet} {
+        font-size: 60px;
+    }
+
+    @media #{$mobile} {
+        font-size: 30px;
+    }
+}
+
+.text {
+    @extend %text;
+
+    @media #{$mobile} {
+        font-size: 15px;
+    }
+}
+
+.thewood {
+    margin-top: 30%;
+    &__title {
+        margin-left: 10%;
+    }
+    &__title-text{
+        @extend %title;
+    }
+
+
+    .thewood-wrapper {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        &__card {
+            padding: 3%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__card-img {
+            width: 205px;
+
+            @media #{$tablet} {
+                justify-content: center;
+                width: 60%;
+            }
+            @media #{$mobile} {
+                width: 35%;
+            }
+
+        }
+    }
+
+    .thewood-card {
+        &__title{
+            color: #F5F5F5;
+            font-family: Inter, sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            padding: 15%;
+
+            @media #{$tablet} {
+                font-size: 20px;
+            }
+            @media #{$mobile} {
+                font-size: 17px;
+            }
+        }
+        &__card-img {
+            padding: 5%;
+        }
+        &__item{
+            display: flex;
+            align-items: flex-start;
+        }
+        &__item-img{
+            padding-right: 10px;
+            display: flex;
+            transform: translate(-30%, 40%);
+
+            @media #{$tablet} {
+                transform: translate(-30%, 10%);
+            }
+
+            @media #{$mobile} {
+                transform: translate(-30%, 10%);
+            }
+        }
+        &__item-text{
+            color: #F5F5F5;
+            font-size: 30px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+
+            @media #{$tablet} {
+                font-size: 20px;
+            }
+            @media #{$mobile} {
+                font-size: 18px;
+            }
+        }
+    }
+}

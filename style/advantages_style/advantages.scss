@@ -1,0 +1,146 @@
+@import "../fonts";
+@import "../template";
+
+
+.title {
+    @extend %title;
+
+    @media #{$tablet} {
+        font-size: 60px;
+    }
+
+    @media #{$mobile} {
+        font-size: 30px;
+    }
+}
+
+.text {
+    @extend %text;
+
+    @media #{$mobile} {
+        font-size: 15px;
+    }
+}
+
+
+.advantages {
+    max-width: 1188px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 121px;
+
+    @media #{$tablet} {
+        max-width: 639px;
+        gap: 60px;
+        margin-bottom: 150px;
+    }
+
+    @media #{$mobile} {
+        max-width: 305px;
+        min-height: 599px;
+        gap: 46px;
+        margin-bottom: 70px;
+    }
+
+    &__title-wrapper {
+        max-width: 1040px;
+        width: 100%;
+        display: flex;
+        margin: 0 0 0 auto;
+
+        @media #{$tablet} {
+            max-width: 639px;
+        }
+
+        @media #{$mobile} {
+            max-width: 305px;
+            padding: 0 9px;
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+
+        .button {
+            @extend %button;
+            max-width: 33%;
+            width: 100%;
+            padding: 1% 0 1% 0;
+            font-size: 1.5rem;
+            border: none;
+
+            @media #{$tablet} {
+                max-width: 50%;
+            }
+
+            @media #{$mobile} {
+                max-width: 65%;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+.advantages-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 32px;
+
+    @media #{$tablet} {
+        flex-direction: column-reverse;
+        padding: 0 25px;
+    }
+
+    @media #{$mobile} {
+        flex-direction: column-reverse;
+        padding: 0 15px;
+        gap: 46px;
+    }
+
+    &__img-wrapper {
+
+        img {
+            max-width: 609px;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        max-width: 453px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 46px;
+
+        @media #{$tablet} {
+            margin: 0 auto 0 0;
+            font-size: 25px;
+            max-width: 500px;
+        }
+
+        @media #{$mobile} {
+            max-width: 320px;
+            font-size: 15px;
+            gap: 11px;
+        }
+    }
+
+    &__p-12 {
+        max-width: 360px;
+    }
+
+    &__p-3 {
+        @media #{$tablet} {
+            max-width: 360px;
+        }
+    }
+}

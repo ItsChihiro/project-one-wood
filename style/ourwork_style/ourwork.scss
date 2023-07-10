@@ -1,0 +1,47 @@
+@import '../fonts';
+@import "../template";
+
+%table {
+      background-color: #d9d9d9;
+      border-radius: 40px;
+    }
+
+    .title {
+        @extend %title;
+
+        @media #{$tablet} {
+            font-size: 60px;
+        }
+
+        @media #{$mobile} {
+            font-size: 30px;
+        }
+    }
+
+    .text {
+        @extend %text;
+
+        @media #{$mobile} {
+            font-size: 15px;
+        }
+    }
+
+
+
+
+.block-ourworks {
+  margin-top: 8%;
+  margin-bottom: 20%;
+
+  &__pic1 {
+    max-width: 80%;
+    margin: 3% 10% 0 10%;
+    border-radius: 90px;
+  }
+
+  &__title {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+}

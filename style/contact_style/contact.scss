@@ -1,0 +1,162 @@
+@import "../fonts";
+@import "../template";
+
+
+
+.title {
+    @extend %title;
+
+    @media #{$tablet} {
+        font-size: 60px;
+    }
+
+    @media #{$mobile} {
+        font-size: 30px;
+    }
+}
+
+.elements-text {
+    @extend %elements-text;
+    text-decoration: none;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+
+    @media #{$mobile} {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.button {
+    @extend %button;
+}
+
+img {
+    max-width: 100%;
+
+    @media #{$mobile} {
+        width: 347px;
+        height: 230px;
+    }
+}
+
+
+.contact {
+    max-width: 1440px;
+    width: 100%;
+    min-height: 933px;
+    display: flex;
+    gap: 141px;
+
+    @media screen and (max-width: 1300px) {
+        flex-direction: column;
+        gap: 98px;
+    }
+
+    @media #{$tablet} {
+        flex-direction: column;
+        gap: 98px;
+        min-height: 645px;
+    }
+
+    @media #{$mobile} {
+        flex-direction: column;
+        gap: 49px;
+        min-height: 539px;
+    }
+
+    &__map {
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+        margin-bottom: 32px;
+
+        @media screen and (max-width: 1300px) {
+            justify-content: center;
+        }
+
+        @media #{$tablet} {
+            justify-content: center;
+        }
+
+        @media #{$mobile} {
+            margin: 0 15px 0 15px;
+        }
+    }
+}
+
+
+.contact-info {
+    padding-left: 17%;
+    padding-top: 12.5%;
+
+    @media #{$mobile} {
+        padding-left: 24px;
+        padding-top: 23px;
+    }
+
+    &__title-wrapper {
+        height: 120px;
+        margin-bottom: 118px;
+
+        @media #{$tablet} {
+            margin-bottom: 60px;
+        }
+
+        @media #{$mobile} {
+            height: 40px;
+            margin-bottom: 41px;
+        }
+    }
+
+    &__tel {
+        width: 350px;
+        margin-bottom: 33px;
+
+        @media #{$mobile} {
+            width: 250px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__address {
+        width: 377px;
+
+        @media #{$mobile} {
+            width: 230px;
+        }
+    }
+
+    &__address-text {
+        max-width: 280px;
+
+        @media #{$mobile} {
+            width: 190px;
+        }
+    }
+}
+
+
+.item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+    @media #{$mobile} {
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+
+    @media #{$mobile} {
+        width: 32px;
+        height: 32px;
+    }
+}
+

@@ -1,0 +1,82 @@
+@import "../fonts";
+@import "../template";
+
+
+.header {
+    height: 183px;
+    background-color: #1E0C06;
+    border-radius: 0px 0px 79px 79px;
+    box-shadow: 0px -8px 52px 0px rgba(245, 245, 245, 0.17);
+
+    @media #{$mobile} {
+        border-radius: 0px 0px 30px 30px;
+        height: 82px;
+    }
+
+    &__wrapper {
+        height: 183px;
+        padding: 4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media #{$mobile} {
+            border-radius: 0px 0px 30px 30px;
+            height: 82px;
+        }
+    }
+
+    &__logo {
+        width: 197px;
+        // height: 83.7px;
+
+        @media #{$mobile} {
+            width: 84px;
+        }
+    }
+
+    &__logo-img {
+        max-width: 100%;
+    }
+
+    &__nav {
+        width: 50%;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+
+        @media #{$mobile} {
+            display: none;
+        }
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__nav-link {
+        @extend %elements-text;
+        text-decoration: none;
+        font-size: 20px;
+
+        @media #{$tablet} {
+            font-size: 14px;
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        @media #{$mobile} {
+            display: block;
+            width: 23px;
+        }
+    }
+
+    .active {
+        color: #A3B8D7;
+    }
+
+}

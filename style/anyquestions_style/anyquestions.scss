@@ -1,0 +1,186 @@
+@import "../fonts";
+@import "../template";
+
+$colorbtn: #728bad;
+$marginform: 0px 2% 10px 20px;
+$text-color: #F5F5F5;
+
+.see {
+  @media #{$largedesktop}
+  {
+    display: none;
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
+}
+
+
+.block-anyquestions {
+  padding-top: 2%;
+  margin-bottom: -137px;
+
+  @media #{$tablet} {
+    margin-bottom: 127px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 127px;
+  }
+
+
+  &__title {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+    margin-bottom: 40px;
+
+    @media #{$tablet} {
+      width: 550px;
+    }
+
+    @media #{$mobile} {
+      justify-content: start;
+      padding-left: 2%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__main-part {
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$mobile} {
+      flex-direction: column-reverse;
+      justify-content: start;
+    }
+
+    @media #{$tablet} {
+      flex-direction: column-reverse;
+      justify-content: start;
+    }
+  }
+
+  &__input-info {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+
+    @media #{$mobile} {
+      width: 100%;
+    }
+
+    @media #{$tablet} {
+      width: 100%;
+    }
+  }
+
+  &__text {
+
+    width: 50%;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+
+    @media #{$tablet} {
+      font-size: 14px;
+      max-width: 500px;
+    }
+
+    @media #{$mobile} {
+      font-size: 10px;
+      max-width: 350px;
+    }
+  }
+
+  &__wrapper-wood {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text-wrapper {
+
+    display: flex;
+    justify-content: flex-end;
+    text-align: start;
+    color: aliceblue;
+
+    @media #{$tablet} {
+      justify-content: start;
+      padding-left: 5%;
+    }
+
+    @media #{$mobile} {
+      justify-content: start;
+      padding-left: 2%;
+    }
+  }
+
+  &__wood-img {
+    z-index: -1;
+    @media #{$mobile} {
+      display: none;
+    }
+
+    @media #{$tablet} {
+      display: none;
+    }
+
+    max-width: 500px;
+    display: flex;
+
+    @media #{$desktop} {
+      overflow: hidden;
+      justify-content: center;
+    }
+
+    @media #{$largedesktop} {
+      overflow: hidden;
+    }
+  }
+}
+
+.form {
+  color: rgba(217, 217, 217, 0.51);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 42px;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+
+  @media #{$mobile} {
+    font-size: 10px;
+  }
+
+  &__input-yourname {
+    margin: $marginform;
+    padding: 2% 0 2% 5%;
+    border: 2px solid $colorbtn;
+  }
+
+  &__input-yourtelnum {
+    margin: $marginform;
+    padding: 2% 0 2% 5%;
+    border: 2px solid $colorbtn;
+  }
+
+  &__input-yourquestions {
+    height: 170px;
+    margin: $marginform;
+    padding: 2% 0 2% 5%;
+    border: 2px solid $colorbtn;
+  }
+
+  &__button {
+    @extend %button;
+    margin: $marginform;
+    font-size: 1em;
+    max-width: 30%;
+    padding: 1% 0 1% 0;
+    border: none;
+
+    @media #{$mobile} {
+      font-size: 15px;
+    }
+  }
+}

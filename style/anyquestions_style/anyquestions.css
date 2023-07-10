@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-package/Regular.eot");
+  src: url("../assets/fonts/Inter-package/Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Inter-package/Inter Regular.woff2") format("woff2"), url("../assets/fonts/Inter-package/Inter Regular.woff") format("woff"), url("../assets/fonts/Inter-package/Inter Regular.ttf") format("truetype"), url("../assets/fonts/Inter-package/Inter Regular.svg#Inter Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-E0D0;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-package/Inter Bold.eot");
+  src: url("../assets/fonts/Inter-package/Inter Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Inter-package/Inter Bold.woff2") format("woff2"), url("../assets/fonts/Inter-package/Inter Bold.woff") format("woff"), url("../assets/fonts/Inter-package/Inter Bold.ttf") format("truetype"), url("../assets/fonts/Inter-package/Inter Bold.svg#Inter Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-E0D0;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-package/Bold.eot");
+  src: url("../assets/fonts/Montserrat-package/Montserrat Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Montserrat-package/Montserrat Bold.woff2") format("woff2"), url("../assets/fonts/Montserrat-package/Montserrat Bold.woff") format("woff"), url("../assets/fonts/Montserrat-package/Montserrat Bold.ttf") format("truetype"), url("../assets/fonts/Montserrat-package/Montserrat Bold.svg#Montserrat Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+@font-face {
+  font-family: "Playfair Display Medium";
+  src: url("../assets/fonts/Playfair_Display-package/Display Medium.eot");
+  src: url("../assets/fonts/Playfair_Display-package/Playfair Display Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Playfair_Display-package/Playfair Display Medium.woff2") format("woff2"), url("../assets/fonts/Playfair_Display-package/Playfair Display Medium.woff") format("woff"), url("../assets/fonts/Playfair_Display-package/Playfair Display Medium.svg#Playfair Display Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+.background-price-page {
+  background-image: url("/assets/img/price_img/Group 11.png");
+  background-size: cover;
+  background-color: rgb(33, 33, 33);
+}
+
+.background-about-page {
+  background-image: url(/assets/img/about_img/Group\ 35.png);
+  background-size: cover;
+  background-color: rgb(33, 33, 33);
+}
+
+.background-contact-page {
+  background-image: url(/assets/img/contact_img/group-36.png);
+  background-size: cover;
+  background-color: rgb(33, 33, 33);
+}
+
+.background-home-page {
+  background-image: url(/assets/img/home_img/Group\ 9.png);
+  background-size: cover;
+  background-color: rgb(33, 33, 33);
+}
+
+.background-gallery-page {
+  background-image: url(/assets/img/gallery_img/Group\ 10.png);
+  background-size: cover;
+  background-color: rgb(33, 33, 33);
+}
+
+.container-main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222021 !important;
+}
+
+.form__button {
+  border-radius: 42px;
+  background-color: #728bad;
+  color: #f5f5f5;
+  font-size: 30px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1920px) {
+  .see {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .see {
+    display: none;
+  }
+}
+
+.block-anyquestions {
+  padding-top: 2%;
+  margin-bottom: -137px;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .block-anyquestions {
+    margin-bottom: 127px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .block-anyquestions {
+    margin-bottom: 127px;
+  }
+}
+.block-anyquestions__title {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2%;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .block-anyquestions__title {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .block-anyquestions__title {
+    justify-content: start;
+    padding-left: 2%;
+    margin-bottom: 10px;
+  }
+}
+.block-anyquestions__main-part {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 599px) {
+  .block-anyquestions__main-part {
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .block-anyquestions__main-part {
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+}
+.block-anyquestions__input-info {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+@media screen and (max-width: 599px) {
+  .block-anyquestions__input-info {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .block-anyquestions__input-info {
+    width: 100%;
+  }
+}
+.block-anyquestions__text {
+  width: 50%;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .block-anyquestions__text {
+    font-size: 14px;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .block-anyquestions__text {
+    font-size: 10px;
+    max-width: 350px;
+  }
+}
+.block-anyquestions__wrapper-wood {
+  display: flex;
+  justify-content: center;
+}
+.block-anyquestions__text-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  text-align: start;
+  color: aliceblue;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .block-anyquestions__text-wrapper {
+    justify-content: start;
+    padding-left: 5%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .block-anyquestions__text-wrapper {
+    justify-content: start;
+    padding-left: 2%;
+  }
+}
+.block-anyquestions__wood-img {
+  z-index: -1;
+  max-width: 500px;
+  display: flex;
+}
+@media screen and (max-width: 599px) {
+  .block-anyquestions__wood-img {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .block-anyquestions__wood-img {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .block-anyquestions__wood-img {
+    overflow: hidden;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .block-anyquestions__wood-img {
+    overflow: hidden;
+  }
+}
+
+.form {
+  color: rgba(217, 217, 217, 0.51);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 42px;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+@media screen and (max-width: 599px) {
+  .form {
+    font-size: 10px;
+  }
+}
+.form__input-yourname {
+  margin: 0px 2% 10px 20px;
+  padding: 2% 0 2% 5%;
+  border: 2px solid #728bad;
+}
+.form__input-yourtelnum {
+  margin: 0px 2% 10px 20px;
+  padding: 2% 0 2% 5%;
+  border: 2px solid #728bad;
+}
+.form__input-yourquestions {
+  height: 170px;
+  margin: 0px 2% 10px 20px;
+  padding: 2% 0 2% 5%;
+  border: 2px solid #728bad;
+}
+.form__button {
+  margin: 0px 2% 10px 20px;
+  font-size: 1em;
+  max-width: 30%;
+  padding: 1% 0 1% 0;
+  border: none;
+}
+@media screen and (max-width: 599px) {
+  .form__button {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=anyquestions.css.map */

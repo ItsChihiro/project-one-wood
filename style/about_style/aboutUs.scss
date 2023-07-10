@@ -1,0 +1,203 @@
+@import '../fonts';
+@import "../template";
+
+.title {
+    @extend %title;
+
+    @media #{$tablet} {
+        font-size: 60px;
+    }
+
+    @media #{$mobile} {
+        font-size: 30px;
+    }
+}
+
+.text {
+    @extend %text;
+
+    @media #{$mobile} {
+        font-size: 15px;
+    }
+}
+
+
+.about {
+    border-radius: 0px 42px 42px 0px;
+    background-color: #1e0c06;
+    // max-width: 1325px;
+    width: 92%;
+    min-height: 775px;
+    padding: 32px;
+    box-shadow: 0px -8px 52px 0px rgba(238, 238, 238, 0.17);
+
+    display: flex;
+    margin-right: 28px;
+    margin-top: 105px;
+    margin-bottom: 200px;
+
+    @media screen and (max-width: 1380px) {
+        flex-direction: column;
+        gap: 46px;
+    }
+
+    @media #{$tablet} {
+        min-height: 775px;
+        flex-direction: column;
+        gap: 46px;
+    }
+
+    @media #{$mobile} {
+        width: 94%;
+        min-height: 674px;
+        flex-direction: column;
+        gap: 46px;
+        margin-top: 29px;
+    }
+}
+
+
+.about-arcticle {
+    max-width: 516px;
+    margin-left: 16%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 67px;
+
+    @media #{$tablet} {
+        max-width: 560px;
+        margin-left: 34px;
+        gap: 46px;
+    }
+
+    @media #{$mobile} {
+        max-width: 283px;
+        margin-left: -15px;
+        gap: 36px;
+    }
+
+    &__text {
+        height: 294px;
+        display: flex;
+        align-items: center;
+
+        @media #{$mobile} {
+            height: 146px;
+        }
+    }
+}
+
+
+
+.about-arcticle__title {
+    height: 120px;
+
+    @media #{$tablet} {
+        height: 80px;
+    }
+
+    @media #{$mobile} {
+        height: 40px;
+    }
+}
+
+
+.about-pictures {
+    position: relative;
+    width: 100%;
+    height: 699px;
+
+    @media screen and (max-width: 1380px) {
+        max-width: 560px;
+        margin: 0 200px 20px 100px;
+    }
+
+    @media #{$tablet} {
+        max-width: 560px;
+        margin: 0 200px 20px 20px;
+    }
+
+    @media #{$mobile} {
+        width: 283px;
+        margin: 0 auto;
+        // gap: 36px;
+        height: 400px;
+        margin-left: -3px;
+    }
+
+
+    &__img1 {
+        position: absolute;
+        top: 29px;
+        right: 38px;
+
+        @media #{$tablet} {
+            top: 29px;
+            right: 38px;
+        }
+
+        @media #{$mobile} {
+            height: 111px;
+            width: 111px;
+            top: 0px;
+            right: 0px;
+        }
+    }
+
+    &__background-img2 {
+        height: 337px;
+        width: 337px;
+        position: absolute;
+        top: 145px;
+        right: 125px;
+        border-radius: 42px;
+        background-color: #1e0c06;
+        max-width: 100%;
+        z-index: 1;
+
+        @media #{$mobile} {
+            height: 182.8px;
+            width: 182.8px;
+            border-radius: 18px;
+            top: 15px;
+            right: 85px;
+        }
+    }
+
+    &__img2 {
+        position: absolute;
+        top: 155px;
+        right: 135px;
+        z-index: 2;
+
+        @media #{$mobile} {
+            height: 182.8px;
+            width: 182.8px;
+            border-radius: 14px;
+            top: 22px;
+            left: 5px;
+        }
+    }
+
+    &__img3 {
+        position: absolute;
+        bottom: -1px;
+        right: 70px;
+
+        @media #{$tablet} {
+            margin-left: 22%;
+            margin-right: 5%;
+        }
+
+        @media #{$mobile} {
+            height: 111px;
+            width: 111px;
+            border-radius: 14px;
+            bottom: 35px;
+            right: 40px;
+        }
+    }
+}
+
+
