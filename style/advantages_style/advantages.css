@@ -116,10 +116,6 @@ body {
   cursor: pointer;
 }
 
-img {
-  max-width: 100%;
-}
-
 @media screen and (max-width: 599px) {
   .text {
     font-size: 15px;

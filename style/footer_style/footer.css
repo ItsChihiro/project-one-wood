@@ -94,10 +94,6 @@ body {
   font-style: normal;
 }
 
-img {
-  max-width: 100%;
-}
-
 .item {
   display: flex;
   gap: 14px;

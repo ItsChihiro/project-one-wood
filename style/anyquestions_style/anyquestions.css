@@ -90,10 +90,6 @@ body {
   cursor: pointer;
 }
 
-img {
-  max-width: 100%;
-}
-
 @media screen and (min-width: 1920px) {
   .see {
     display: none;

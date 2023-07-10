@@ -2,29 +2,29 @@
 @import "../template";
 
 %table {
-      background-color: #d9d9d9;
-      border-radius: 40px;
-    }
+  background-color: #d9d9d9;
+  border-radius: 40px;
+}
 
-    .title {
-        @extend %title;
+.title {
+  @extend %title;
 
-        @media #{$tablet} {
-            font-size: 60px;
-        }
+  @media #{$tablet} {
+    font-size: 60px;
+  }
 
-        @media #{$mobile} {
-            font-size: 30px;
-        }
-    }
+  @media #{$mobile} {
+    font-size: 30px;
+  }
+}
 
-    .text {
-        @extend %text;
+.text {
+  @extend %text;
 
-        @media #{$mobile} {
-            font-size: 15px;
-        }
-    }
+  @media #{$mobile} {
+    font-size: 15px;
+  }
+}
 
 
 
@@ -37,6 +37,10 @@
     max-width: 80%;
     margin: 3% 10% 0 10%;
     border-radius: 90px;
+
+    @media #{$mobile} {
+      border-radius: 50px;
+    }
   }
 
   &__title {

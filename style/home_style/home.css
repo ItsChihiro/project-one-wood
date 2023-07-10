@@ -123,10 +123,6 @@ body {
   cursor: pointer;
 }
 
-img {
-  max-width: 100%;
-}
-
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .title {
     font-size: 60px;
@@ -147,11 +143,6 @@ img {
   .text {
     font-size: 15px;
   }
-}
-
-body {
-  background-color: #222021 !important;
-  background-image: url(../../assets/img/home_img/Group\ 9.png);
 }
 
 .home-background {
@@ -263,7 +254,7 @@ body {
 }
 .main .main-home__cards-container .home-text__info .home-text__info-btn {
   background-color: #728BAD;
-  color: #FFDBBB;
+  color: #F5F5F5;
   border-radius: 42px;
   padding: 1% 0 1% 0;
   font-family: "Inter", sans-serif;
