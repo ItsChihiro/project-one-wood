@@ -81,6 +81,10 @@ $marginform: 0px 2% 10px 20px;
         }
     }
 
+    &__logo-img {
+        max-width: 100%;
+    }
+
     &__nav {
         .header-home__items {
             display: flex;
